@@ -14,10 +14,10 @@ https://github.com/Maxence-villet/echo.git
 ```
 cargo run
 ```
-3 - launch .exe/.deb in <h4>src</h4> folder
+3 - launch .exe/.deb in ```src``` folder
 
 <h3>How it work?</h3>
 
-It's same thing of Bash, just write <h2><strong>echo</strong> hello, world!</h2>
+It's same thing of Bash, just write ```echo hello, world!``` for example.
 
 
