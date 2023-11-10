@@ -1,4 +1,4 @@
-<h1>Echo command</h1>
+<h1>echo command</h1>
 
 <h3>What do you need before?</h3>
 
