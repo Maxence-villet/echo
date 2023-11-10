@@ -14,7 +14,7 @@ https://github.com/Maxence-villet/echo.git
 ```
 cargo run
 ```
-3 - launch .exe/.deb in ```src``` folder
+3 - launch .exe/.deb in ```target``` folder
 
 <h3>How it work?</h3>
 
