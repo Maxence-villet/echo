@@ -8,7 +8,7 @@
 
 1 - fork the repository with git :
 ```
-https://github.com/Maxence-villet/echo.git
+git clone https://github.com/Maxence-villet/echo.git
 ```
 2 - launch cargo run (in current div of project)
 ```
