@@ -10,14 +10,22 @@
 ```
 git clone https://github.com/Maxence-villet/echo.git
 ```
-2 - launch cargo run (in current folder of project) in Terminal
+2 - install module to prject in terminal
+```
+cargo build
+```
+3 - launch cargo run (in current folder of project) in Terminal
 ```
 cargo run
 ```
-3 - launch .exe/.deb in ```target``` folder
+4 - launch .exe/.deb in ```target``` folder
 
 <h3>How it work?</h3>
 
 It's same thing of Bash, just write ```echo hello, world!``` for example.
 
 
+<h3>What are commands?</h3>
+▶️ echo [text]      repeat text
+▶️ :q               exit program
+▶️ ?                commands help
