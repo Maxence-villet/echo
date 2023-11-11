@@ -26,6 +26,6 @@ It's same thing of Bash, just write ```echo hello, world!``` for example.
 
 
 <h3>What are commands?</h3>
-▶️ echo [text]      repeat text \n
-▶️ :q               exit program \n
-▶️ ?                commands help \n
+▶️ echo [text]      repeat text
+▶️ :q               exit program
+▶️ ?                commands help
