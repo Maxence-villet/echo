@@ -1,6 +1,5 @@
 use std::io;
-use colored::Colorize;
-
+use colour::*;
 fn main() {
     
 
@@ -22,8 +21,15 @@ fn main() {
 
                 if word.contains(CMD[2])  {
                     if let Some(_word) = word.trim().strip_prefix(CMD[2]) {
+                        blue!("{}", CMD[0]);
+                        white!("[text]  repeat text \n");
 
-                        println!("{}           exit program\n{}[text]  repeat text\n{}            help command", CMD[1].blue(), CMD[0].blue(), CMD[2].blue());
+                        blue!("{}", CMD[1]);
+                        white!("           exit program \n");
+
+                        blue!("{}", CMD[2]);
+                        white!("            help command \n");
+
                         continue;
                     }
                 }
