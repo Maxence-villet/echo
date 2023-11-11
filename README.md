@@ -10,7 +10,11 @@
 ```
 git clone https://github.com/Maxence-villet/echo.git
 ```
-2 - launch cargo run (in current folder of project) in Terminal
+2 - install module to prject in terminal
+```
+cargo build
+```
+3 - launch cargo run (in current folder of project) in Terminal
 ```
 cargo run
 ```
