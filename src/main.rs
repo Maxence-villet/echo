@@ -3,27 +3,26 @@ use std::io;
 use std::thread;
 fn main() {
     
-    let cmd = String::from("echo ");
+    //echo command
+    const CMD: &str = "echo ";
 
-    let mut word_read = false;
-
+    // input
     let mut word = String::new();
+    
+    // check command
     match io::stdin().read_line(&mut word) {
-        Ok(_n) => word_read = true,
-        Err(error) => println!("error : {error}"),
-    }
-
-    if word.contains(&cmd)  {
-        if &word[0..4] == &cmd[0..4] {
-            if word_read == true  {
-                word = word[5..].to_string();
-                println!("{}", word);
+        Ok(_n) => {
+            if word.contains(CMD)  {
+                if let Some(word) = word.trim().strip_prefix(CMD) {
+                        println!("{}", word);
+                    } else {
+                        println!("command unknown!");
+                    }
+            } else {
+                println!("command unknown!");
             }
-        } else {
-            println!("command unknown!");
-        }
-    } else {
-        println!("command unknown!");
+        },
+        Err(error) => println!("error : {error}"),
     }
 
     let time_for_exit = time::Duration::from_secs(5);
