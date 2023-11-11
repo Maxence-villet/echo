@@ -14,12 +14,16 @@ fn main() {
         // check command
         match io::stdin().read_line(&mut word) {
             Ok(_n) => {
+
+                if word.len() < 3 {
+                    continue;
+                }
                 // exit program
                 if word.contains(CMD[1]) {
                     break;
                 }
 
-                if word.contains(CMD[2])  {
+                if word.contains(CMD[2]) && word.len() == 3 {
                     if let Some(_word) = word.trim().strip_prefix(CMD[2]) {
                         blue!("{}", CMD[0]);
                         white!("[text]  repeat text \n");
