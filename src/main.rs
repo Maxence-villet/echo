@@ -19,7 +19,7 @@ fn main() {
                     continue;
                 }
                 // exit program
-                if word.contains(CMD[1]) {
+                if word.contains(CMD[1]) && word.len() == 4 {
                     break;
                 }
 
